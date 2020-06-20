@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Shift Roster</title>
+</head>
+<body>
+    <h1>Welcome to <abbr title="Shift Roster Maker">SRM</abbr></h1>
+    <input type="text" name="team" id="team">
+    <button class="btn add-team">Add Team</button>
+    <div class="team-error"></div>
+    <br>
+    <select name="teams" id="choose-team">
+        <option value="---" disabled selected>Choose Team</option>
+    </select>
+    <input type="text" name="member" id="member">
+    <button class="btn add-member">Add Member</button>
+    <div class="member-error"></div>
+    <br>
+    <input type="number" name="month" id="month">
+    <button class="btn choose-month">Choose Month</button>
+    <div class="month-error"></div>
+    <div class="cur-date">
+        Date
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">
+                    Team
+                </th>
+                <th rowspan="3">
+                    Members
+                </th>
+                <th colspan="31" class="month-and-year">
+                    July'2020
+                </th>
+            </tr>
+            <tr class="all-dates">
+                <th>
+                    1
+                </th>
+                <th>
+                    2
+                </th>
+                <th>
+                    3
+                </th>
+            </tr>
+            <tr class="all-days">
+                <th>
+                    Mon
+                </th>
+                <th>
+                    Tue
+                </th>
+                <th>
+                    Wed
+                </th>
+            </tr>
+        </thead>
+        <tbody class="table-content">
+            <tr class="APAC">
+                <td rowspan="4">
+                    APAC
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sabareesh
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Deepan
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Chottelal
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+            </tr>
+            <tr class="EMEA">
+                <td rowspan="3">
+                    EMEA
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rama
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Moomin
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+                <td>
+                    WE
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="number" name="weekends" id="weekends">
+    <button class="btn set-weekends">Set Weekends</button>
+    <!-- <button class="btn reset-weekends">Reset</button> -->
+    <button class="btn generate">Generate</button>
+    <div class="we-error"></div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
